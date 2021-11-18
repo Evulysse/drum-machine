@@ -28,8 +28,16 @@ function update() {
             console.log("tick: ", drumCount);
         }
     drumCount +=1;
+    } else if(kick.checked){
+        kick.play();
+        drumCount += 1;
+    }else if(snare.checked){
+        snare.play();
+        drumCount += 1;
+    }else if(hihat.checked){
+        hihat.play();
+        drumCount += 1;
     }
-
     
 }
 // This function sets up update() to be called every 600ms
